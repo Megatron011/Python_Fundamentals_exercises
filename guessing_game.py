@@ -6,9 +6,11 @@ while True:
     if not guess.isdigit():
         print( "Invalid input. Enter a number")
         continue
-    elif int(guess) < 0:
-        print("Enter a positive number")
-
+    elif 100 < int(guess) < 0 :
+        print("Enter a number in the range")
+        continue
+        
+        
     if int(guess) > number:
         print("Too High")
     elif int(guess) < number:
